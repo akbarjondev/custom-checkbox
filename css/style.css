@@ -66,6 +66,24 @@ p + a {
 } */
 
 .payment-span {
+  position: relative;
+}
+
+.payment:checked + .payment-span::before {
+  content: "";
+  position: absolute;
+  /* top: 0; */
+  bottom: 100%;
+  transform: translateY(65%);
+  left: -20%;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../img/check.svg");
+  background-size: contain;
+}
+
+.payment-span {
   display: inline-block;
   width: 10px;
   height: 10px;
