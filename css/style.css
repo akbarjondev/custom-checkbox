@@ -1,0 +1,74 @@
+body {
+  font-family: monospace;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.item {
+  padding: 5px 10px;
+  border: 1px solid tomato;
+}
+
+li span {
+  display: inline-block;
+  padding: 2px 4px;
+  background-color: green;
+}
+
+.link {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: red;
+}
+
+.list > * {
+  background-color: yellow;
+}
+
+div > a {
+
+}
+
+main > p {
+
+}
+
+p ~ a {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+p + a {
+  border: 5px solid pink;
+}
+
+.label {
+  position: relative;
+  cursor: pointer;
+}
+
+.payment {
+  display: none;
+}
+
+/* .payment:checked + .payment-span {
+  border-color: violet;
+  background-image: url("./../img/check.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+
+.payment-span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
